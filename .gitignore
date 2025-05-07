@@ -3,9 +3,14 @@
 *.lock
 *.log
 *.pyc
+.DS_Store
+.atom/
 *.swp
 .buildlog/
 .history
+.svn/
+migrate_working_dir/
+.idea/
 
 
 
@@ -40,7 +45,9 @@ analysis_benchmark.json
 .packages
 .pub-preload-cache/
 .pub/
+.pub-cache/
 build/
+/build/
 flutter_*.png
 linked_*.ds
 unlinked.ds
@@ -117,3 +124,23 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
